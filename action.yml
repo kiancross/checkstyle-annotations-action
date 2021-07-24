@@ -1,0 +1,20 @@
+#
+# Copyright (C) 2021 Kian Cross
+#
+
+name: Java Checkstyle Annotations Uploader
+author: Kian Cross
+
+description: >
+  Uploads Checkstyle errors & warnings as GitHub Annotations and
+  decorates the log file output. Compatible with forked PRs.
+
+branding:
+  icon: check-circle
+  color: orange
+
+runs:
+  using: composite
+  steps:
+    - run: echo "::add-matcher::${{ github.action_path }}/problem-matcher.json"
+      shell: bash
