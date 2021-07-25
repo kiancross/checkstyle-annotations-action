@@ -1,7 +1,7 @@
 # Java Checkstyle Annotations Uploader
 
-[![Continuous Integration](https://github.com/kiancross/java-annotations-checkstyle/actions/workflows/continous-integration.yml/badge.svg?event=push)](https://github.com/kiancross/java-annotations-checkstyle/actions/workflows/continous-integration.yml)
-[![License](https://img.shields.io/github/license/kiancross/java-annotations-checkstyle)](https://github.com/kiancross/java-annotations-checkstyle/blob/master/LICENSE)
+[![Continuous Integration](https://github.com/kiancross/checkstyle-annotations-action/actions/workflows/continous-integration.yml/badge.svg?event=push)](https://github.com/kiancross/checkstyle-annotations-action/actions/workflows/continous-integration.yml)
+[![License](https://img.shields.io/github/license/kiancross/checkstyle-annotations-action)](https://github.com/kiancross/checkstyle-annotations-action/blob/master/LICENSE)
 
 Uploads Checkstyle errors & warnings as [GitHub Annotations](https://docs.github.com/en/rest/reference/checks#list-check-run-annotations)
 and decorates the log file output. Unlike other similar Actions, this
@@ -11,7 +11,7 @@ also works on pull requests from forks and Dependabot.
 
 ```yaml
 steps:
- - uses: kiancross/java-annotations-checkstyle@v1
+ - uses: kiancross/checkstyle-annotations-action@v1
 
  # Execute Checkstyle
 ```
@@ -23,9 +23,9 @@ Action will not work if the output is only written to an XML file.
 
 No special permissions are required to upload annotations from
 forks, as a [Problem Matcher](https://github.com/actions/toolkit/blob/master/docs/problem-matchers.md)
-is used. This scans the output of steps for a [specified regular expression](https://github.com/kiancross/java-annotations-checkstyle/blob/master/problem-matcher.json),
+is used. This scans the output of steps for a [specified regular expression](https://github.com/kiancross/checkstyle-annotations-action/blob/master/problem-matcher.json),
 which matches Checkstyle's logging format.
 
 ## License
 
-The contents of this repository is released under the [MIT License](https://github.com/kiancross/java-annotations-checkstyle/blob/master/LICENSE).
+The contents of this repository is released under the [MIT License](https://github.com/kiancross/checkstyle-annotations-action/blob/master/LICENSE).
