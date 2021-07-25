@@ -1,6 +1,7 @@
 # Java Checkstyle Annotations Uploader
 
 [![Continuous Integration](https://github.com/kiancross/java-annotations-checkstyle/actions/workflows/continous-integration.yml/badge.svg?event=push)](https://github.com/kiancross/java-annotations-checkstyle/actions/workflows/continous-integration.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/kiancross/java-annotations-checkstyle/blob/master/LICENSE)
 
 Uploads Checkstyle errors & warnings as [GitHub Annotations](https://docs.github.com/en/rest/reference/checks#list-check-run-annotations)
 and decorates the log file output. Unlike other similar Actions, this
